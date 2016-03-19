@@ -14,3 +14,7 @@ var turnCount = 0;
    turnCount ++;
   });
 });
+
+$('.btn').on("click", function (event){
+$('.box').text("");
+});
