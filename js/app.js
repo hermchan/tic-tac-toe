@@ -63,9 +63,9 @@ $(document).ready(function() {
     }
 
 // Button that will reset entire board
-
-    $('.btn').on("click", function (event){
+  $('.btn').on("click", function (event){
       $('.box').text("");
       turnCount=0;
+      $('#message').html('Current Player: X');
     });
   });
