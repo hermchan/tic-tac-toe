@@ -51,6 +51,10 @@ $(document).ready(function() {
       alert("Player O wins!");
     } else if ($('#box3').text()===O && $('#box5').text()===O && $('#box7').text()===O){
       alert("Player O wins!");
+    } else if (turnCount===9){
+      alert('Tie Game');
+      $('.box').text("");
+      turnCount=0;
     }
   });
 
@@ -59,7 +63,9 @@ $(document).ready(function() {
     }
 
 // Button that will reset entire board
-  $('.btn').on("click", function (event){
-    $('.box').text("");
+
+    $('.btn').on("click", function (event){
+      $('.box').text("");
+      turnCount=0;
+    });
   });
-});
