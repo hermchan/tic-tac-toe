@@ -53,7 +53,6 @@ $(document).ready(function() {
       alert("Player O wins!");
     } else if (turnCount===9){
       alert('Tie Game');
-      $('.box').text("");
       turnCount=0;
     }
   });
