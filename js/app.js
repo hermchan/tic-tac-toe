@@ -2,20 +2,22 @@
 $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
-var turnCount = 0;
-var X = "X";
-var O = "O";
-var curPlayer = X;
+  var turnCount = 0;
+  var X = "X";
+  var O = "O";
 
   $(".box").on("click", function (event){
     if (turnCount%2===0){
       $(this).text(X);
+      $('#message').html("Current Player: 0");
     } else {
        $(this).text(O);
+       $('#message').html("Current Player: X");
     }
    turnCount ++;
   });
 
+// function to getWinner and send an alert to winner
   $(".box").on("click", function getWinner(){
     if ($('#box1').text()===X && $('#box2').text()===X && $('#box3').text()===X){
       alert("Player X wins!");
@@ -52,17 +54,12 @@ var curPlayer = X;
     }
   });
 
-  var displayMessage = function( message ) {
-      $( '#message' ).html( message );
-    };
-
-    var switchPlayer = function() {
-      curPlayer = ( curPlayer === X ) ? O : X;
-      displayMessage( 'Current Player: ' + curPlayer );
-    };
+  function displayMessage(message){
+      $('#message').html(message);
+    }
 
 // Button that will reset entire board
-$('.btn').on("click", function (event){
-$('.box').text("");
-});
+  $('.btn').on("click", function (event){
+    $('.box').text("");
+  });
 });
