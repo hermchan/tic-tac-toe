@@ -2,30 +2,65 @@
   margin-top: 10px;
 }
 
+body {
+  background-image: url('http://bgfons.com/upload/iron_texture3995.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .box {
   border: 1px solid black;
   height: 150px;
 }
 h1 {
-  font: 68px/68px "Chewy",Arial, sans-serif;
-  color: #2C9090;
+  font: 68px/68px "Cabin",Arial, sans-serif;
+  color: #efefef;
 }
 
 #message {
-  font: 30px/30px "Chewy", Arial, sans-serif;
-  color: #2C9090;
-  padding-bottom: 30px;
+  font: 33px/30px "Cabin", Arial, sans-serif;
+  color: #efefef;
+  display: inline-block;
+  background-color: rgba(65, 58, 39, 0.58);
+  width: 585px;
+  text-align: center;
+  border: 2px solid #efefef;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#message p {
+  font-size: 25px;
+  padding-top: 5px;
 }
 
 .col-md-4 {
-  font: 100px/100px "Chewy", Arial, sans-serif;
+  font: 100px/100px "Cabin", Arial, sans-serif;
   text-align: center;
-  color: #BB2929;
+  color: #efefef;
+  background-color: rgba(65, 58, 39, 0.58);
   padding-top: 30px;
+  border: 2px solid;
+}
+
+.col-md-4:hover {
+  background-color: rgba(59, 104, 111, 0.64);
 }
 
 .btn {
-  font: 25px/25px "Chewy", Arial, sans-serif;
-  color:#2C9090;
-  background-color: white;
+  font: 25px/25px "Cabin", Arial, sans-serif;
+  color:#efefef;
+  background-color: transparent;
+}
+
+.clearButton {
+  display: inline-block;
+  background-color: rgba(65, 58, 39, 0.58);
+  width: 585px;
+  text-align: center;
+  border: 2px solid #efefef;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.clearButton:hover {
+  background-color: rgba(59, 104, 111, 0.64);
 }
